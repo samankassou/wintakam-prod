@@ -1,5 +1,6 @@
 @php
-$types = app(Botble\RealEstate\Repositories\Interfaces\TypeInterface::class)->all();
+//$types = app(Botble\RealEstate\Repositories\Interfaces\TypeInterface::class)->all();
+$types = Botble\RealEstate\Models\Type::all();
 @endphp
 
 @if(count($types))
